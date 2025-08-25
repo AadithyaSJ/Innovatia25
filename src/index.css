@@ -1,10 +1,60 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Gloria+Hallelujah&family=Kavoon&family=Mystery+Quest&family=Oi&family=Pinewood&family=Righteous&family=Rye&family=Spicy+Rice&family=VT323&display=swap');
+
+
 
 .kavoon-regular {
   font-family: "Kavoon", serif;
   font-weight: 400;
   font-style: normal;
 }
+
+:root {
+  --font-oi: 'Oi', cursive;
+  --font-spicy: 'Spicy Rice', cursive;
+  --font-kavoon: 'Kavoon', cursive;
+  --font-rye: 'Rye', cursive;
+  --font-fascinate: 'Fascinate', cursive;
+  --font-mystery: 'Mystery Quest', cursive;
+  --font-righteous: 'Righteous', cursive;
+  --font-vt323: 'VT323', monospace;
+  --font-gloria: 'Gloria Hallelujah', cursive;
+  --font-pinewood: 'Pinewood', sans-serif;
+}
+
+/* Utility classes */
+.font-oi {
+  font-family: var(--font-oi);
+}
+.font-spicy {
+  font-family: var(--font-spicy);
+}
+.font-kavoon {
+  font-family: var(--font-kavoon);
+}
+.font-rye {
+  font-family: var(--font-rye);
+}
+.font-fascinate {
+  font-family: var(--font-fascinate);
+}
+.font-mystery {
+  font-family: var(--font-mystery);
+}
+.font-righteous {
+  font-family: var(--font-righteous);
+}
+.font-vt323 {
+  font-family: var(--font-vt323);
+}
+.font-gloria {
+  font-family: var(--font-gloria);
+}
+.font-pinewood {
+  font-family: var(--font-pinewood);
+}
+
 
 
 @keyframes slide-in {

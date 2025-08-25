@@ -1,23 +1,32 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+// App.jsx
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import Home from "./pages/Home.jsx";
-import Loader from "./components/Loader.jsx";
 import { useState, useEffect } from "react";
+
+import Home from "./pages/Home";
+// import Details from "./pages/Details";
+// import Team from "./pages/Team";
+// import About from "./pages/About";
+// import Schedule from "./pages/Schedule";
+// import Events from "./pages/Events";
+// import EventInfo from "./pages/EventInfo";
+import Loader from "./components/Loader";
+import Layout from "./components/Layout";
 
 export default function App() {
   const [loaded, setLoaded] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
-    // fake boot time; replace with real asset preload if needed
-    const t = setTimeout(() => setLoaded(true), 4200);
+    // fake boot time; replace with real preload if needed
+    const t = setTimeout(() => setLoaded(true), 3000);
     return () => clearTimeout(t);
   }, []);
 
   if (!loaded) return <Loader />;
 
   return (
-    <div className="min-h-dvh crt">
+    <div className="min-h-dvh select-none">
       <AnimatePresence mode="wait">
         <motion.div
           key={location.pathname}
@@ -28,6 +37,55 @@ export default function App() {
         >
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
+            <Route
+              path="/welcome"
+              element={
+                <Layout>
+                  <Home />
+                </Layout>
+              }
+            />
+            {/* <Route
+              path="/team"
+              element={
+                <MainLayout>
+                  <Team />
+                </MainLayout>
+              }
+            />
+            <Route
+              path="/about"
+              element={
+                <MainLayout>
+                  <About />
+                </MainLayout>
+              }
+            />
+            <Route
+              path="/schedule"
+              element={
+                <MainLayout>
+                  <Schedule />
+                </MainLayout>
+              }
+            />
+            <Route
+              path="/events"
+              element={
+                <MainLayout>
+                  <Events />
+                </MainLayout>
+              }
+            />
+            <Route
+              path="/event/:eventName"
+              element={
+                <MainLayout>
+                  <EventInfo />
+                </MainLayout>
+              }
+            />
+            <Route path="*" element={<Navigate to="/welcome" />} /> */}
           </Routes>
         </motion.div>
       </AnimatePresence>
