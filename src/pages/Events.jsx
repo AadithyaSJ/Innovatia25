@@ -92,7 +92,6 @@ const Events = () => {
             </Tabs.Trigger>
         </Tabs.List>
 
-
         {/* Technical Events */}
         <Tabs.Content value="technical" className="p-4">
           <h2 className="text-2xl font-spicy mb-4 text-amber-300">
@@ -100,7 +99,7 @@ const Events = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {technicalEvents.map((event) => (
-              <EventCard key={event.key} {...event} />
+              <EventCard key={event.key} name={event.name} pic={event.image} info={event.info} path={event.key} />
             ))}
           </div>
         </Tabs.Content>
@@ -112,7 +111,7 @@ const Events = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {nonTechnicalEvents.map((event) => (
-              <EventCard key={event.key} {...event} />
+              <EventCard key={event.key} name={event.name} pic={event.image} info={event.info} path={event.key} />
             ))}
           </div>
         </Tabs.Content>
@@ -121,17 +120,15 @@ const Events = () => {
   );
 };
 
-// Bounty Poster Event Card
-// Bounty Poster Event Card
 const EventCard = ({ name, pic, info, path }) => {
   return (
     <div className="relative flex flex-col bg-yellow-50/95 p-4 rounded-lg border-4 border-orange-800 shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
-
       {/* Wrinkled/Torn Paper Effect */}
-      <div className="absolute inset-0 pointer-events-none z-0"
+      <div
+        className="absolute inset-0 pointer-events-none z-0"
         style={{
-          background:
-            `repeating-linear-gradient(
+          background: `
+            repeating-linear-gradient(
               45deg,
               rgba(0,0,0,0.02),
               rgba(0,0,0,0.02) 2px,
@@ -188,7 +185,5 @@ const EventCard = ({ name, pic, info, path }) => {
     </div>
   );
 };
-
-
 
 export default Events;
