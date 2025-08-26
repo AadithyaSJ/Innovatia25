@@ -37,7 +37,14 @@ export default function App() {
           transition={{ duration: 0.5, ease: "easeInOut" }}
         >
           <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<Home />} />
+            <Route
+              path="/"
+              element={
+                <Layout>
+                  <Home />
+                </Layout>
+              }
+            />
             <Route
               path="/welcome"
               element={
