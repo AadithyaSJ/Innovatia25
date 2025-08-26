@@ -12,6 +12,7 @@ import Home from "./pages/Home";
 // import EventInfo from "./pages/EventInfo";
 import Loader from "./components/Loader";
 import Layout from "./components/Layout";
+import Events from "./pages/Events";
 
 export default function App() {
   const [loaded, setLoaded] = useState(false);
@@ -42,6 +43,14 @@ export default function App() {
               element={
                 <Layout>
                   <Home />
+                </Layout>
+              }
+            />
+            <Route
+              path="/events"
+              element={
+                <Layout>
+                  <Events />
                 </Layout>
               }
             />

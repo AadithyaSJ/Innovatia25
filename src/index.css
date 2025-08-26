@@ -27,6 +27,7 @@
 .font-oi {
   font-family: var(--font-oi);
 }
+
 .font-spicy {
   font-family: var(--font-spicy);
 }
@@ -74,18 +75,57 @@
 
 
 @keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
 }
 
-.hover\\:animate-shimmer {
-  background: linear-gradient(90deg, #fff, #ffd700, #fff);
-  background-size: 200% auto;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: shimmer 2s linear infinite;
+.animate-shimmer {
+  animation: shimmer 3s infinite linear;
 }
+
+/* Move masked pattern diagonally */
+@keyframes movePattern {
+  75% {
+    background-position: 100% 20%;
+  }
+}
+@keyframes spotlightMove {
+  0% {
+    background-position: 0% 50%, 0% 50%;
+  }
+  100% {
+    background-position: 100% 100%, 100% 50%;
+    /* background-color:  */
+  }
+}
+
+.retro-link {
+  color: #ff80ff;
+  transition: all 0.3s ease-in-out;
+}
+.retro-link:hover {
+  color: #0ff;
+}
+
+
+/* Neon glow pulse */
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 10px #FFB3BA, 0 0 20px #FFDFBA, 0 0 30px #FFFFBA;
+  }
+  50% {
+    text-shadow: 0 0 20px #FFB3BA, 0 0 40px #FFDFBA, 0 0 60px #FFFFBA;
+  }
+  100% {
+    text-shadow: 0 0 10px #FFB3BA, 0 0 20px #FFDFBA, 0 0 30px #FFFFBA;
+  }
+}
+
+
 
 
 @tailwind base;
