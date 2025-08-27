@@ -18,7 +18,7 @@ export default function Home() {
   {/* Title Image */}
   <div className="flex justify-center">
     <img
-      src="/logo.png"
+      src="/Innovatia2.png"
       alt="Innovatia 4.0"
       className="w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/2 h-auto object-contain"
     />
@@ -27,9 +27,9 @@ export default function Home() {
   {/* Buttons */}
   <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center font-gloria">
     <NeonButton to="/events" glowColor="cyan">ARCADE</NeonButton>
-    <NeonButton to="/showcase" glowColor="cyan">LEGENDS</NeonButton>
+    <NeonButton to="/team" glowColor="cyan">LEGENDS</NeonButton>
     <NeonButton to="/about" glowColor="orange">The Story</NeonButton>
-    <NeonButton to="/about" glowColor="orange">Enter Timeline</NeonButton>
+    <NeonButton to="/showcase" glowColor="orange">Enter Timeline</NeonButton>
   </div>
 </section>
 

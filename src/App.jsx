@@ -9,6 +9,9 @@ import NonTechnicalEvents from "./pages/NonTechnicalEvents";
 import EventDetails from "./pages/EventDetails";
 import Loader from "./components/Loader";
 import Layout from "./components/Layout";
+import Schedule from "./pages/Schedule";
+import About from "./pages/About";
+import Team from "./pages/Team";
 
 export default function App() {
   const [loaded, setLoaded] = useState(false);
@@ -77,6 +80,30 @@ export default function App() {
               element={
                 <Layout>
                   <EventDetails />
+                </Layout>
+              }
+            />
+            <Route
+              path="/showcase"
+              element={
+                <Layout>
+                  <Schedule />
+                </Layout>
+              }
+            />
+            <Route
+              path="/about"
+              element={
+                <Layout>
+                  <About />
+                </Layout>
+              }
+            />
+            <Route
+              path="/team"
+              element={
+                <Layout>
+                  <Team />
                 </Layout>
               }
             />
