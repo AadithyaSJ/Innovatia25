@@ -162,7 +162,7 @@ const EventDetails = () => {
         },
         {
           name: "Creative Battle",
-          mode: "Online",
+          mode: "Offline",
           date: "September 14, 2025",
           time: "3:00 PM - 5:00 PM",
           info: "Showcase your creativity in themed challenges."
