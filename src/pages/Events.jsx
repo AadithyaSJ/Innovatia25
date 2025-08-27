@@ -1,124 +1,5 @@
 import React from "react";
-import backButton from "/back-button.png";
-import { Link } from "react-router-dom";
-import * as Tabs from "@radix-ui/react-tabs";
 import BountyButton from "../components/BountyButton";
-
-const Events = () => {
-  const technicalEvents = [
-    {
-      name: "Cryptic Heist",
-      key: "cryptic-heist",
-      image: "/events/cryptic-heist-poster.png",
-      info: "Dive into a thrilling online adventure solving cryptographic puzzles and cracking codes to complete a high-stakes virtual heist.",
-    },
-    {
-      name: "DevQuest",
-      key: "dev-quest",
-      image: "/events/devquest-poster.jpg",
-      info: "An exhilarating coding competition testing problem-solving skills and algorithmic prowess in a stimulating environment.",
-    },
-    {
-      name: "Voyage of Visions",
-      key: "voyage-of-visions",
-      image: "/events/voyage-of-visions-poster.jpg",
-      info: "Present groundbreaking ideas across technologies, exploring knowledge and creativity in an immersive setting.",
-    },
-  ];
-
-  const nonTechnicalEvents = [
-    {
-      name: "CraftWave",
-      key: "craft-wave",
-      image: "/events/craft-wave-poster.png",
-      info: "A creative and environmentally-focused competition raising awareness about ocean pollution through art, innovation, and sustainability.",
-    },
-    {
-      name: "M.A.D.D Wars",
-      key: "madd-wars",
-      image: "/events/madd-wars-poster.jpg",
-      info: "Celebrate iconic worlds of adventure, heroism, and magic through epic battles and immersive challenges.",
-    },
-    {
-      name: "Sictone",
-      key: "sictone",
-      image: "/events/sictone-poster.jpg",
-      info: "Challenge teams with cinematic quizzes, puzzles, and lyrical memory tests in a fun, dynamic environment.",
-    },
-  ];
-
-  return (
-    <div className="z-10 p-4 lg:w-4/5 space-y-10 mx-auto text-amber-50 font-spicy">
-      {/* Header */}
-      <div className="flex items-center gap-4">
-        <Link to="/welcome" className="w-[15%] lg:w-fit">
-          <img
-            src={backButton}
-            alt="backButton"
-            className="h-12 w-12 hover:scale-110 transition-transform"
-          />
-        </Link>
-        <h1 className="text-3xl lg:text-5xl drop-shadow-md text-orange-300">
-          Our Arcades
-        </h1>
-      </div>
-
-      {/* Tabs */}
-      <Tabs.Root defaultValue="technical" className="w-full rounded-lg text-white">
-        <Tabs.List className="flex border-b-2 border-orange-800 bg-yellow-100/80 rounded-md">
-            <Tabs.Trigger
-                value="technical"
-                className="flex-1 py-2 text-center font-spicy text-lg text-orange-900
-                        hover:text-orange-700
-                        data-[state='active']:text-white
-                        data-[state='active']:bg-orange-800
-                        data-[state='active']:border-b-2
-                        data-[state='active']:border-orange-900
-                        transition-colors"
-            >
-                Arcade 1
-            </Tabs.Trigger>
-            <Tabs.Trigger
-                value="non-technical"
-                className="flex-1 py-2 text-center font-spicy text-lg text-orange-900
-                        hover:text-orange-700
-                        data-[state='active']:text-white
-                        data-[state='active']:bg-orange-800
-                        data-[state='active']:border-b-2
-                        data-[state='active']:border-orange-900
-                        transition-colors"
-            >
-                Arcade 2
-            </Tabs.Trigger>
-        </Tabs.List>
-
-        {/* Technical Events */}
-        <Tabs.Content value="technical" className="p-4">
-          <h2 className="text-2xl font-spicy mb-4 text-amber-300">
-            CREATIVE POWER-UP
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {technicalEvents.map((event) => (
-              <EventCard key={event.key} name={event.name} pic={event.image} info={event.info} path={event.key} />
-            ))}
-          </div>
-        </Tabs.Content>
-
-        {/* Non-Technical Events */}
-        <Tabs.Content value="non-technical" className="p-4">
-          <h2 className="text-2xl font-spicy mb-4 text-amber-300">
-            CODE QUEST
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {nonTechnicalEvents.map((event) => (
-              <EventCard key={event.key} name={event.name} pic={event.image} info={event.info} path={event.key} />
-            ))}
-          </div>
-        </Tabs.Content>
-      </Tabs.Root>
-    </div>
-  );
-};
 
 const EventCard = ({ name, pic, info, path }) => {
   return (
@@ -160,6 +41,7 @@ const EventCard = ({ name, pic, info, path }) => {
         src={pic}
         alt={name}
         className="rounded-md w-full h-52 object-cover border-2 border-orange-700 mt-10 relative z-10 filter contrast-110 brightness-95"
+        onError={(e) => { e.target.src = "/placeholder-image.png"; console.log("Event image load failed"); }}
       />
 
       {/* Event Name */}
@@ -186,4 +68,4 @@ const EventCard = ({ name, pic, info, path }) => {
   );
 };
 
-export default Events;
+export { EventCard };

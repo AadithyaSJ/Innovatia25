@@ -3,7 +3,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
 import Home from "./pages/Home";
-import Events from "./pages/Events";
+import Arcades from "./pages/Arcades";
+import TechnicalEvents from "./pages/TechnicalEvents";
+import NonTechnicalEvents from "./pages/NonTechnicalEvents";
 import EventDetails from "./pages/EventDetails";
 import Loader from "./components/Loader";
 import Layout from "./components/Layout";
@@ -13,7 +15,6 @@ export default function App() {
   const location = useLocation();
 
   useEffect(() => {
-
     const t = setTimeout(() => setLoaded(true), 3000);
     return () => clearTimeout(t);
   }, []);
@@ -51,7 +52,23 @@ export default function App() {
               path="/events"
               element={
                 <Layout>
-                  <Events />
+                  <Arcades />
+                </Layout>
+              }
+            />
+            <Route
+              path="/event/technical"
+              element={
+                <Layout>
+                  <TechnicalEvents />
+                </Layout>
+              }
+            />
+            <Route
+              path="/event/non-technical"
+              element={
+                <Layout>
+                  <NonTechnicalEvents />
                 </Layout>
               }
             />

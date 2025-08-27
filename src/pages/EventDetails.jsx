@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import backButton from "/back-button.png";
+import backButton from "/public/back-button.png";
 
 const EventDetails = () => {
   const { eventName } = useParams();
@@ -9,6 +9,7 @@ const EventDetails = () => {
     {
       key: "cryptic-heist",
       name: "Cryptic Heist",
+      category: "technical",
       description:
         "Join the ultimate cryptographic challenge where teams solve complex puzzles and crack codes to execute a virtual heist. Test your problem-solving skills and teamwork in this thrilling online adventure.",
       team: "2-4 members",
@@ -44,6 +45,7 @@ const EventDetails = () => {
     {
       key: "dev-quest",
       name: "DevQuest",
+      category: "technical",
       description:
         "Compete in a fast-paced coding competition designed to push your algorithmic skills to the limit. Solve challenging problems under time constraints and rise to the top of the leaderboard.",
       team: "Individual",
@@ -78,6 +80,7 @@ const EventDetails = () => {
     {
       key: "voyage-of-visions",
       name: "Voyage of Visions",
+      category: "technical",
       description:
         "Showcase your innovative ideas in a dynamic presentation format. Explore cutting-edge technologies and creative solutions in a collaborative and immersive environment.",
       team: "1-3 members",
@@ -112,6 +115,7 @@ const EventDetails = () => {
     {
       key: "craft-wave",
       name: "CraftWave",
+      category: "non-technical",
       description:
         "Create impactful art and innovative solutions to raise awareness about ocean pollution. This competition blends creativity and sustainability to inspire change.",
       team: "1-4 members",
@@ -146,6 +150,7 @@ const EventDetails = () => {
     {
       key: "madd-wars",
       name: "M.A.D.D Wars",
+      category: "non-technical",
       description:
         "Dive into epic battles inspired by iconic worlds of adventure and magic. Compete in challenges that test your strategy, creativity, and teamwork.",
       team: "3-5 members",
@@ -180,6 +185,7 @@ const EventDetails = () => {
     {
       key: "sictone",
       name: "Sictone",
+      category: "non-technical",
       description:
         "Test your knowledge of cinema and music through quizzes, puzzles, and memory challenges. A fun and engaging event for teams to showcase their pop culture expertise.",
       team: "2-3 members",
@@ -216,6 +222,8 @@ const EventDetails = () => {
   // Find the event based on the eventName from the URL
   const event = eventDetails.find((e) => e.key === eventName);
 
+  // Determine the back link based on the event category
+  const backLink = event && event.category === "technical" ? "/event/technical" : "/event/non-technical";
 
   if (!event) {
     return (
@@ -243,7 +251,7 @@ const EventDetails = () => {
     <div className="min-h-screen p-4 lg:w-4/5 mx-auto text-amber-50 font-spicy">
       {/* Header */}
       <div className="flex items-center gap-4 mb-6">
-        <Link to="/events" className="w-[15%] lg:w-fit">
+        <Link to={backLink} className="w-[15%] lg:w-fit">
           <img
             src={backButton}
             alt="backButton"
@@ -272,7 +280,6 @@ const EventDetails = () => {
           <p><strong>Team:</strong> {event.team}</p>
           <p><strong>Venue:</strong> {event.venue}</p>
           <p><strong>Reporting Time:</strong> {event["reporting-time"]}</p>
-          <p><strong>Prize:</strong> {event.prize}</p>
         </div>
         <h2 className="text-2xl font-gloria font-bold text-orange-900 mt-6 mb-2">
           Rounds
