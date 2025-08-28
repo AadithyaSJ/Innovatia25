@@ -4,14 +4,13 @@ import { useState, useEffect } from "react";
 
 import Home from "./pages/Home";
 import Arcades from "./pages/Arcades";
-import TechnicalEvents from "./pages/TechnicalEvents";
-import NonTechnicalEvents from "./pages/NonTechnicalEvents";
 import EventDetails from "./pages/EventDetails";
 import Loader from "./components/Loader";
 import Layout from "./components/Layout";
 import Schedule from "./pages/Schedule";
 import About from "./pages/About";
 import Team from "./pages/Team";
+import EventsPage from "./pages/EventsPage";
 
 export default function App() {
   const [loaded, setLoaded] = useState(false);
@@ -60,18 +59,10 @@ export default function App() {
               }
             />
             <Route
-              path="/event/technical"
+              path="/event/list/:type"
               element={
                 <Layout>
-                  <TechnicalEvents />
-                </Layout>
-              }
-            />
-            <Route
-              path="/event/non-technical"
-              element={
-                <Layout>
-                  <NonTechnicalEvents />
+                  <EventsPage />
                 </Layout>
               }
             />

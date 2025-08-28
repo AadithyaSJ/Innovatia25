@@ -1,73 +1,73 @@
 import React, { useState } from "react";
-import sheriffBadgeTechnical from "../assets/sheriff-badge-technical.jpeg";
-import sheriffBadgeNonTechnical from "../assets/sheriff-badge-nontechnical.jpeg";
-import { Link, useNavigate } from "react-router-dom";
+import sheriffBadgeCode from "../assets/sheriff-badge-technical.jpeg"; // rename if needed
+import sheriffBadgeCreative from "../assets/sheriff-badge-nontechnical.jpeg"; // rename if needed
+import { useNavigate } from "react-router-dom";
 import Headers from "../components/Headers";
 
 const Arcades = () => {
-  const [loaded, setLoaded] = useState({}); // track image loads
+  const [loaded, setLoaded] = useState({});
   const navigate = useNavigate();
 
   const handleBadgeClick = (tabValue) => {
-    navigate(`/event/${tabValue}`);
+    navigate(`/event/list/${tabValue}`);
   };
 
   return (
-    <div className="z-10 p-4 lg:w-4/5 space-y-10 mx-auto text-amber-50 font-spicy relative  min-h-screen">
+    <div className="z-10 p-4 lg:w-4/5 space-y-10 mx-auto text-amber-50 font-spicy relative min-h-screen">
       {/* Header */}
-      <Headers title={"Our Arcades"}/>
+      <Headers title={"Our Arcades"} />
 
       {/* Badges Grid */}
       <div className="flex flex-col md:flex-row gap-6 justify-center items-center w-full">
-        {/* Technical Events */}
+        {/* Code Events */}
         <div
           className="flex-1 py-2 text-center cursor-pointer"
-          onClick={() => handleBadgeClick("technical")}
+          onClick={() => handleBadgeClick("code")}
         >
           <div className="relative w-[80%] mx-auto">
-            {!loaded.technical && (
+            {!loaded.code && (
               <div className="absolute inset-0 bg-gradient-to-r from-gray-700 via-gray-800 to-gray-700 animate-pulse rounded-lg" />
             )}
             <img
-              src={sheriffBadgeTechnical}
-              alt="Technical Events Badge"
+              src={sheriffBadgeCode}
+              alt="Code Events Badge"
               loading="lazy"
               className={`w-full h-auto object-contain mx-auto transition-all duration-500 ${
-                loaded.technical ? "opacity-100 scale-100" : "opacity-0 scale-95"
+                loaded.code ? "opacity-100 scale-100" : "opacity-0 scale-95"
               } hover:scale-105`}
-              onLoad={() => setLoaded((prev) => ({ ...prev, technical: true }))}
-            />
-          </div>
-          <p className="mt-2 text-3xl font-spicy text-orange-300 text-center">
-            Creative Power-Up
-          </p>
-        </div>
-
-        {/* Non-Technical Events */}
-        <div
-          className="flex-1 py-2 text-center cursor-pointer"
-          onClick={() => handleBadgeClick("non-technical")}
-        >
-          <div className="relative w-[80%] mx-auto">
-            {!loaded.nonTechnical && (
-              <div className="absolute inset-0 bg-gradient-to-r from-gray-700 via-gray-800 to-gray-700 animate-pulse rounded-lg" />
-            )}
-            <img
-              src={sheriffBadgeNonTechnical}
-              alt="Non-Technical Events Badge"
-              loading="lazy"
-              className={`w-full h-auto object-contain mx-auto transition-all duration-500 ${
-                loaded.nonTechnical
-                  ? "opacity-100 scale-100"
-                  : "opacity-0 scale-95"
-              } hover:scale-105`}
-              onLoad={() =>
-                setLoaded((prev) => ({ ...prev, nonTechnical: true }))
-              }
+              onLoad={() => setLoaded((prev) => ({ ...prev, code: true }))}
             />
           </div>
           <p className="mt-2 text-3xl font-spicy text-orange-300 text-center">
             Code Quest
+          </p>
+        </div>
+
+        {/* Creative Events */}
+        <div
+          className="flex-1 py-2 text-center cursor-pointer"
+          onClick={() => handleBadgeClick("creative")}
+        >
+          <div className="relative w-[80%] mx-auto">
+            {!loaded.creative && (
+              <div className="absolute inset-0 bg-gradient-to-r from-gray-700 via-gray-800 to-gray-700 animate-pulse rounded-lg" />
+            )}
+            <img
+              src={sheriffBadgeCreative}
+              alt="Creative Events Badge"
+              loading="lazy"
+              className={`w-full h-auto object-contain mx-auto transition-all duration-500 ${
+                loaded.creative
+                  ? "opacity-100 scale-100"
+                  : "opacity-0 scale-95"
+              } hover:scale-105`}
+              onLoad={() =>
+                setLoaded((prev) => ({ ...prev, creative: true }))
+              }
+            />
+          </div>
+          <p className="mt-2 text-3xl font-spicy text-orange-300 text-center">
+            Creative Power-Up
           </p>
         </div>
       </div>

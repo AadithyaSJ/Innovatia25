@@ -1,0 +1,231 @@
+{
+  "code": [
+    {
+      "key": "cybernoir",
+      "name": "CYBERNOIR",
+      "category": "technical",
+      "description": "Step into a retro-noir inspired world of cybersecurity where participants become digital detectives. Solve puzzles, quizzes, and decode clues to unmask 'The Shadow'.",
+      "team": "2-3 members",
+      "venue": "Online & Offline",
+      "reportingTime": "9:00 AM",
+      "image": "/events/cybernoir-poster.png",
+      "rounds": [
+        {
+          "name": "Round 1",
+          "mode": "Online",
+          "date": "TBD",
+          "time": "TBD",
+          "info": "Quizzes, puzzles, riddles, and cipher texts based on cybersecurity concepts. Test awareness, logical reasoning, and curiosity."
+        },
+        {
+          "name": "Round 2",
+          "mode": "Offline",
+          "date": "October 9, 2025",
+          "time": "9:00 AM - 4:00 PM",
+          "info": "Detective-style mission solving interconnected challenges to reveal the true culprit 'The Shadow'."
+        }
+      ],
+      "instructions": "Follow rounds sequentially. Bring your own devices. Valid college ID required. Full team presence mandatory. Time-bound submissions only.",
+      "formLink": "https://forms.gle/JqY32rEVLrSxjFu99",
+      "groupLink": "#",
+      "brochureLink": "#",
+      "coordinators": [
+        { "name": "S.R.Viknesh", "phone": "6379200416", "type": "Student" },
+        { "name": "S.Saranya", "phone": "7603868669", "type": "Student" }
+      ]
+    },
+    {
+      "key": "retro-code-chronicles",
+      "name": "Retro Code Chronicles",
+      "category": "technical",
+      "description": "A coding challenge blending problem-solving, teamwork, and fun with unexpected hindrances.",
+      "team": "3 members",
+      "venue": "Alpha Hall, Sri Sairam Engineering College",
+      "reportingTime": "9:00 AM",
+      "image": "/events/retro-code-chronicles-poster.png",
+      "rounds": [
+        {
+          "name": "Online Prelims – Code Kickoff",
+          "mode": "Online",
+          "date": "TBD",
+          "time": "30-45 minutes",
+          "info": "Teams solve simple coding questions or MCQs online to shortlist top teams based on accuracy and speed. Only docs allowed; no collaboration."
+        },
+        {
+          "name": "Offline Semi-Finals – Logo Unlocked",
+          "mode": "Offline",
+          "date": "9th October 2025",
+          "time": "45-60 minutes",
+          "info": "Teams solve coding problems to reveal sections of a hidden logo and tackle bonus riddles. Only one coder active at a time; teamwork encouraged. Judges' decision final."
+        },
+        {
+          "name": "Offline Finale – Code Rush",
+          "mode": "Offline",
+          "date": "9th October 2025",
+          "time": "35-40 minutes",
+          "info": "Relay coding round with sequential coding turns and random funny hindrances every 15 seconds. Tests creativity, coding skills, teamwork, and composure."
+        }
+      ],
+      "instructions": "Team size 3 members. Bring laptop & ethernet cable. Only one registration per team. Fair play mandatory; cheating leads to disqualification.",
+      "formLink": "https://forms.gle/Do7qNvHViRq6kJbb7",
+      "groupLink": "#",
+      "brochureLink": "#",
+      "coordinators": [
+        { "name": "SANJAY V", "phone": "+91 73585 91248", "type": "Student" },
+        { "name": "YUVASHREE R H", "phone": "+91 9345031173", "type": "Student" }
+      ]
+    },
+    {
+      "key": "vintage-webverse",
+      "name": "Vintage Webverse",
+      "category": "technical",
+      "description": "A retro web design challenge testing teamwork, code quality, and accuracy across online and offline rounds.",
+      "team": "2-3 members",
+      "venue": "Beta Hall, Sri Sairam Engineering College",
+      "reportingTime": "9:00 AM",
+      "image": "/events/vintage-webverse-poster.png",
+      "rounds": [
+        {
+          "name": "Round 1 – Online Prelims",
+          "mode": "Online",
+          "date": "TBD",
+          "time": "TBD",
+          "info": "Teams design retro-styled website components and submit a live link or GitHub repo. Judged based on accuracy, neatness, and code quality."
+        },
+        {
+          "name": "Round 2 – Prompt-O-Graph",
+          "mode": "Offline",
+          "date": "9th October 2025",
+          "time": "45-60 minutes",
+          "info": "One teammate views a vintage template and describes it to others. Team recreates the design within time limits. Tests teamwork and design precision."
+        },
+        {
+          "name": "Round 3 – Classic Remake",
+          "mode": "Offline",
+          "date": "9th October 2025",
+          "time": "45-60 minutes",
+          "info": "Teams analyze a website shown briefly, create a detailed prompt, and design it using multiple stacks. Final build deployed live to Netlify. Prompts must be clear and technically accurate."
+        }
+      ],
+      "instructions": "Team size 2-3 members. Bring laptops and ethernet cables. Only one registration per team. Fair play mandatory. Follow time limits for submissions.",
+      "formLink": "https://forms.gle/B3SLWkfFj15naLGS7",
+      "groupLink": "#",
+      "brochureLink": "#",
+      "coordinators": [
+        { "name": "KOUSHIK BABU M", "phone": "+91 7339473708", "type": "Student" },
+        { "name": "SHAKTHI AKASHATA", "phone": "+91 9962091510", "type": "Student" }
+      ]
+    }
+  ],
+  "creative": [
+    {
+      "key": "paper-powerhouse",
+      "name": "Paper Powerhouse",
+      "category": "creative",
+      "description": "An engaging technical paper presentation competition designed to test research clarity, originality, adaptability, and presentation skills.",
+      "team": "Individual or Team",
+      "venue": "IEDC Cell, Sri Sai Ram Engineering College",
+      "reportingTime": "9:00 AM",
+      "image": "/events/paper-powerhouse-poster.png",
+      "rounds": [
+        {
+          "name": "Abstract & Concept Map Screening",
+          "mode": "Online",
+          "date": "9th October 2025",
+          "time": "9:00 AM - 12:00 PM",
+          "info": "Teams submit a five-page ppt highlighting problem, novelty, and outcomes, along with a concept map."
+        },
+        {
+          "name": "Academic Clash of Ideas",
+          "mode": "Offline",
+          "date": "9th October 2025",
+          "time": "1:00 PM - 4:00 PM",
+          "info": "Stage 1: Shortlisted teams present their paper on stage (5-7 minutes). Stage 2: Interpret random visuals on spot. Stage 3: Make cross-domain connections and answer interactive questions from judges and audience."
+        }
+      ],
+      "instructions": "Abstracts must strictly adhere to page/word limits; plagiarism will lead to disqualification. All visual and cross-domain challenges in finals must be spontaneous. Strict time limits apply for each stage; exceeding limits leads to point deductions. Submissions after the deadline will not be accepted. Judges' decisions are final and binding.",
+      "formLink": "https://docs.google.com/forms/d/e/1FAIpQLSeECunskVoNAzq177diylGk2xSy1cecAv618PZlg30RfOHFog/viewform",
+      "groupLink": "#",
+      "brochureLink": "#",
+      "coordinators": [
+        { "name": "Mridhula.S", "phone": "7010964253", "type": "Student" },
+        { "name": "Lokesh CM", "phone": "8608537669", "type": "Student" }
+      ]
+    },
+    {
+      "key": "past-to-profit",
+      "name": "Past TO Profit",
+      "category": "creative",
+      "description": "Step into the high-stakes world of comeback artists by reviving failed startups and pitching innovative strategies creatively.",
+      "team": "2-3 members",
+      "venue": "Classroom, Sri Sairam Engineering College",
+      "reportingTime": "9:00 AM",
+      "image": "/events/past-to-profit-poster.png",
+      "rounds": [
+        {
+          "name": "The Ad Sprint",
+          "mode": "Online",
+          "date": "28th September 2025",
+          "time": "TBD",
+          "info": "Teams conceptualize and design a compelling poster or advertisement for fictional products in a 30-minute live Zoom session."
+        },
+        {
+          "name": "The Spotlight Showdown",
+          "mode": "Offline",
+          "date": "9th October 2025",
+          "time": "9:00 AM - 4:00 PM",
+          "info": "Teams analyze failed startups, prep for 7 minutes, then deliver a 7-minute pitch. Must incorporate a mandatory 'Plot Twist' card and optionally solve a puzzle to discard it."
+        }
+      ],
+      "instructions": "Team size 2-3 members. College ID mandatory. Original ideas only. Late submissions not accepted. Judging based on creativity, innovation, adaptability, and presentation skills.",
+      "formLink": "https://docs.google.com/forms/d/e/1FAIpQLSd9dw2GEq7xuBJRNJUXgg3ZUK8DpQVrjiU-3H55AWmNKcnX9w/viewform",
+      "groupLink": "#",
+      "brochureLink": "#",
+      "coordinators": [
+        { "name": "Sivasakthi A", "phone": "8122146182", "type": "Student" },
+        { "name": "Ashwin V", "phone": "7904341682", "type": "Student" }
+      ]
+    },
+    {
+      "key": "golden-blueprint",
+      "name": "The Golden Blueprint",
+      "category": "creative",
+      "description": "A UI/UX design challenge testing creativity, problem-solving, and design communication through poster campaigns and reverse designing.",
+      "team": "2-4 members",
+      "venue": "Beta Hall, Sri Sairam Engineering College",
+      "reportingTime": "9:00 AM",
+      "image": "/events/golden-blueprint-poster.png",
+      "rounds": [
+        {
+          "name": "Online Round – Poster Campaign",
+          "mode": "Online",
+          "date": "TBD",
+          "time": "45-60 minutes",
+          "info": "Teams create a product poster within the time limit and upload to Google Drive, named after the team. Top teams qualify for offline rounds."
+        },
+        {
+          "name": "Offline Round 1 – User Interface Creation",
+          "mode": "Offline",
+          "date": "9th October 2025",
+          "time": "60 minutes",
+          "info": "Teams design a UI incorporating a given mystery theme and problem statement. Completion of all pages required. Judges' decision final."
+        },
+        {
+          "name": "Offline Round 2 – Reverse Designing Showdown",
+          "mode": "Offline",
+          "date": "9th October 2025",
+          "time": "30 minutes",
+          "info": "Teams decode abstract UI fragments into complete design solutions, present a 5-minute pitch, and defend in 3-minute Q&A. Judging based on originality, clarity, prototype quality, and communication."
+        }
+      ],
+      "instructions": "Team size 2-4 members. Follow time constraints. Use only provided materials for design. Judging final and binding.",
+      "formLink": "https://forms.gle/5EiXcqmNS3UqUjm39",
+      "groupLink": "#",
+      "brochureLink": "#",
+      "coordinators": [
+        { "name": "Parthiban J", "phone": "+918667628285", "type": "Student" },
+        { "name": "Devadarshan R", "phone": "+917338772604", "type": "Student" }
+      ]
+    }
+  ]
+}
