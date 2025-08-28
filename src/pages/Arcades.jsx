@@ -39,7 +39,7 @@ const Arcades = () => {
             />
           </div>
           <p className="mt-2 text-3xl font-spicy text-orange-300 text-center">
-            Technical Events
+            Creative Power-Up
           </p>
         </div>
 
@@ -67,7 +67,7 @@ const Arcades = () => {
             />
           </div>
           <p className="mt-2 text-3xl font-spicy text-orange-300 text-center">
-            Non-Technical Events
+            Code Quest
           </p>
         </div>
       </div>
