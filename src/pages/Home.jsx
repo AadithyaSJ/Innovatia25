@@ -3,8 +3,7 @@ import NixieCountdown from "../components/NixieCountdown.jsx";
 import SDG from "../components/SDG.jsx";
 
 export default function Home() {
-  const target = new Date();
-  target.setHours(target.getHours() + 36); // demo: 36 hours from now
+  const target = new Date("2025-10-09T00:00:00");
 
   return (
     <main className="min-h-dvh w-full relative overflow-hidden">

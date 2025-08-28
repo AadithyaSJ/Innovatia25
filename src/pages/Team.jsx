@@ -11,11 +11,32 @@ const Team = () => {
 
   const webdevs = [
     {
-      name: "Muthu Aanand SU",
+      name: "Aadithya S J",
       designation: "Student - 4th Year",
-      image: "/team/muthu-aanand.jpg",
-      github: "https://github.com/majestymewtwo",
-      linkedIn: "https://www.linkedin.com/in/muthu-aanand-su-b36188218/",
+      image: "/team/Aadithya.png",
+      github: "https://github.com/AadithyaSJ",
+      linkedIn: "https://www.linkedin.com/in/s-j-aadithya-80a551257/",
+    },
+    {
+      name: "Micheal Rohin",
+      designation: "Student - 3rd Year",
+      image: "/team/micheal.png",
+      github: "https://github.com/MICHAELROHIN",
+      linkedIn: "https://www.linkedin.com/in/s-j-aadithya-80a551257/",
+    },
+    {
+      name: "Koushik Babu",
+      designation: "Student - 4th Year",
+      image: "/team/micheal.png",
+      github: "https://github.com/AadithyaSJ",
+      linkedIn: "https://www.linkedin.com/in/s-j-aadithya-80a551257/",
+    },
+    {
+      name: "Sairaghav S",
+      designation: "Student - 4th Year",
+      image: "/team/Aadithya.png",
+      github: "https://github.com/AadithyaSJ",
+      linkedIn: "https://www.linkedin.com/in/s-j-aadithya-80a551257/",
     },
     // ... repeat
   ];

@@ -1,34 +1,29 @@
 import React from "react";
+import eventData from "../data/data.json";
 
 export function EventTimeline() {
-  const offlineAgenda = [
-    { time: "9:30 AM - 10:45 AM", title: "Inauguration", venue: "Beta Hall" },
-    { time: "10:45 AM - 11:00 AM", title: "Break" },
-    { time: "11:00 AM - 12:35 PM", title: "Voyage of Visions - Round 1", venue: "Alpha Hall" },
-    { time: "11:00 AM - 12:35 PM", title: "Devquest - Round 1", venue: "Beta Hall" },
-    { time: "11:00 AM - 12:35 PM", title: "Cryptic Heist - Round 1", venue: "Gamma Hall" },
-    { time: "11:00 AM - 12:35 PM", title: "Craftwaves - Round 1", venue: "Classroom" },
-    { time: "11:00 AM - 12:35 PM", title: "Sictone - Round 1", venue: "Smart Classroom - I" },
-    { time: "11:00 AM - 12:35 PM", title: "M.A.D.D Wars - Round 1", venue: "Smart Classroom - II" },
-    { time: "12:35 PM - 1:25 PM", title: "Lunch Break" },
-    { time: "1:25 PM - 2:45 PM", title: "Voyage of Visions - Round 2", venue: "Alpha Hall" },
-    { time: "1:25 PM - 2:45 PM", title: "Devquest - Round 2", venue: "Beta Hall" },
-    { time: "1:25 PM - 2:45 PM", title: "Cryptic Heist - Round 2", venue: "Gamma Hall" },
-    { time: "1:25 PM - 2:45 PM", title: "Craftwaves - Round 2", venue: "Classroom" },
-    { time: "1:25 PM - 2:45 PM", title: "Sictone - Round 2", venue: "Smart Classroom - I" },
-    { time: "1:25 PM - 2:45 PM", title: "M.A.D.D Wars - Round 2", venue: "Smart Classroom - II" },
-    { time: "2:45 PM - 3:00 PM", title: "Break" },
-    { time: "3:00 PM - 4:00 PM", title: "Valedictory", venue: "Beta Hall" },
-  ];
+  // Combine all events
+  const allEvents = [...eventData.code, ...eventData.creative];
 
-  const onlineAgenda = [
-    { time: "02/10/2025", title: "Vintage WEBVERSE", venue: "To be posted in group" },
-    { time: "02/10/2025", title: "Cryptic Heist", venue: "To be posted in group" },
-    { time: "02/10/2025", title: "M.A.D.D Wars", venue: "To be posted in group" },
-    { time: "02/10/2025", title: "Sictone", venue: "To be posted in group" },
-    { time: "02/10/2025", title: "Voyage of Visions", venue: "To be posted in group" },
-    { time: "02/10/2025", title: "Craftwaves", venue: "To be posted in group" },
-  ];
+  // Separate online and offline rounds from all events
+  const onlineAgenda = [];
+  const offlineAgenda = [];
+
+  allEvents.forEach((event) => {
+    event.rounds.forEach((round) => {
+      const roundInfo = {
+        title: `${event.name} - ${round.name}`,
+        time: round.time || "",
+        venue: round.mode.toLowerCase() === "offline" ? event.venue : round.venue || "To be posted in group",
+      };
+
+      if (round.mode.toLowerCase() === "online") {
+        onlineAgenda.push(roundInfo);
+      } else {
+        offlineAgenda.push(roundInfo);
+      }
+    });
+  });
 
   const RetroTimeline = ({ title, agenda, extra }) => (
     <div className="w-full lg:w-1/2 p-4">
@@ -41,9 +36,6 @@ export function EventTimeline() {
         </h3>
       )}
       <ol className="relative px-2 border-l-4 border-[#80d4c3]/70 ">
-        {/* Vertical Gradient Bar */}
-        {/* <span className="absolute left-6 top-0 w-1 h-full bg-gradient-to-b from-[#ffb347]/50 via-[#80d4c3]/50 to-[#f4a7b9]/50 rounded-full"></span> */}
-
         {agenda.map((plan, idx) => (
           <li key={idx} className="mb-12 relative group">
             {/* Timeline Node */}
@@ -66,7 +58,6 @@ export function EventTimeline() {
           </li>
         ))}
       </ol>
-
     </div>
   );
 

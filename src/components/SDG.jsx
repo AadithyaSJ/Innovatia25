@@ -18,7 +18,7 @@ export default function SDG() {
       </p>
 
       {/* Body text */}
-      <p className="mt-8 text-justify text-white/90 font-gloria leading-relaxed">
+      <p className="mt-8 text-justify text-white/90 font-righteous leading-relaxed">
         In the boundless spirit of compassion and community, we extend a
         Heartfelt Invitation to you to grace us with your presence at the{" "}
         <q>AIDING HEARTS - DONATION STALL</q> where every act of generosity, no
@@ -47,7 +47,7 @@ export default function SDG() {
       </div>
 
       {/* Closing paragraph */}
-      <p className="mt-10 text-justify text-white/90 font-gloria leading-relaxed">
+      <p className="mt-10 text-justify text-white/90 font-righteous leading-relaxed">
         Your presence and contributions will not merely touch lives; they will
         sculpt destinies and breathe life into dreams. This is more than an
         event; it is a convergence of hearts, a symphony of humanity in action.

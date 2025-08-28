@@ -6,7 +6,7 @@
       "category": "technical",
       "description": "Step into a retro-noir inspired world of cybersecurity where participants become digital detectives. Solve puzzles, quizzes, and decode clues to unmask 'The Shadow'.",
       "team": "2-3 members",
-      "venue": "Online & Offline",
+      "venue": "Smart Classroom I, Sri Sairam Engineering College",
       "reportingTime": "9:00 AM",
       "image": "/events/cybernoir-poster.png",
       "rounds": [
@@ -45,7 +45,7 @@
       "image": "/events/retro-code-chronicles-poster.png",
       "rounds": [
         {
-          "name": "Online Prelims – Code Kickoff",
+          "name": "Code Kickoff",
           "mode": "Online",
           "date": "TBD",
           "time": "30-45 minutes",
@@ -86,21 +86,21 @@
       "image": "/events/vintage-webverse-poster.png",
       "rounds": [
         {
-          "name": "Round 1 – Online Prelims",
+          "name": "Online Prelims",
           "mode": "Online",
           "date": "TBD",
           "time": "TBD",
           "info": "Teams design retro-styled website components and submit a live link or GitHub repo. Judged based on accuracy, neatness, and code quality."
         },
         {
-          "name": "Round 2 – Prompt-O-Graph",
+          "name": " Prompt-O-Graph",
           "mode": "Offline",
           "date": "9th October 2025",
           "time": "45-60 minutes",
           "info": "One teammate views a vintage template and describes it to others. Team recreates the design within time limits. Tests teamwork and design precision."
         },
         {
-          "name": "Round 3 – Classic Remake",
+          "name": "Classic Remake",
           "mode": "Offline",
           "date": "9th October 2025",
           "time": "45-60 minutes",
@@ -197,21 +197,21 @@
       "image": "/events/golden-blueprint-poster.png",
       "rounds": [
         {
-          "name": "Online Round – Poster Campaign",
+          "name": "Poster Campaign",
           "mode": "Online",
           "date": "TBD",
           "time": "45-60 minutes",
           "info": "Teams create a product poster within the time limit and upload to Google Drive, named after the team. Top teams qualify for offline rounds."
         },
         {
-          "name": "Offline Round 1 – User Interface Creation",
+          "name": "User Interface Creation",
           "mode": "Offline",
           "date": "9th October 2025",
           "time": "60 minutes",
           "info": "Teams design a UI incorporating a given mystery theme and problem statement. Completion of all pages required. Judges' decision final."
         },
         {
-          "name": "Offline Round 2 – Reverse Designing Showdown",
+          "name": "Reverse Designing Showdown",
           "mode": "Offline",
           "date": "9th October 2025",
           "time": "30 minutes",
