@@ -19,7 +19,7 @@ export default function Home() {
     <img
       src="/Innovatia2.png"
       alt="Innovatia 4.0"
-      className="w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/2 h-auto object-contain"
+      className="w-full sm:w-2/3 md:w-1/2 lg:w-1/2 h-auto object-contain"
     />
   </div>
 
