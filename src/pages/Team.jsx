@@ -5,8 +5,8 @@ import Headers from "../components/Headers.jsx";
 const Team = () => {
   const staff = [
     { name: "Dr Nithya M", designation: "Head of the Department", image: "/team/nithya.png" },
-    { name: "Shiny A", designation: "Staff Coordinator", image: "/team/shiny.png" },
-    { name: "Shiny A", designation: "Staff Coordinator", image: "/team/shiny.png" },
+    { name: "Ms. Shiny A", designation: "Staff Coordinator", image: "/team/shiny.png" },
+    { name: "Mr. Yuvaraj", designation: "Staff Coordinator", image: "/team/yuvaraj.png" },
   ];
 
   const webdevs = [
