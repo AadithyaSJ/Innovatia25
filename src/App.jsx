@@ -5,48 +5,67 @@ import { useState, useEffect } from "react";
 import Home from "./pages/Home";
 import Arcades from "./pages/Arcades";
 import EventDetails from "./pages/EventDetails";
-import Loader from "./components/Loader";
+import PowerUpLoader from "./components/Loader";
 import Layout from "./components/Layout";
 import Schedule from "./pages/Schedule";
 import About from "./pages/About";
 import Team from "./pages/Team";
 import EventsPage from "./pages/EventsPage";
+import Welcome from "./pages/Welcome";
 
 export default function App() {
   const [loaded, setLoaded] = useState(false);
+  const [realProgress, setRealProgress] = useState(0);
   const location = useLocation();
 
-  useEffect(() => {
-    const t = setTimeout(() => setLoaded(true), 3000);
-    return () => clearTimeout(t);
-  }, []);
+ useEffect(() => {
+    if (!loaded) {
+      let progressValue = 0;
+      const interval = setInterval(() => {
+        progressValue += Math.random() * 12; // Increment progress by random 0-12%
+        if (progressValue >= 100) {
+          progressValue = 100;
+          clearInterval(interval);
+          setTimeout(() => setLoaded(true), 700); // Allow final animations
+        }
+        setRealProgress(progressValue);
+      }, 150); // Adjust speed as needed
+      return () => clearInterval(interval);
+    }
+  }, [loaded]);
 
-  if (!loaded) return <Loader />;
+  if (!loaded)
+    return (
+      <PowerUpLoader
+        currentLoadValue={realProgress}
+        onComplete={() => setLoaded(true)}
+      />
+    );
 
   return (
     <div className="min-h-dvh select-none">
       <AnimatePresence mode="wait">
         <motion.div
           key={location.pathname}
-          initial={{ opacity: 0, filter: "blur(4px)" }}
-          animate={{ opacity: 1, filter: "blur(0px)" }}
-          exit={{ opacity: 0, filter: "blur(6px)" }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          // initial={{ opacity: 0, filter: "blur(4px)" }}
+          // animate={{ opacity: 1, filter: "blur(0px)" }}
+          // exit={{ opacity: 0, filter: "blur(6px)" }}
+          // transition={{ duration: 0.5, ease: "easeInOut" }}
         >
           <Routes location={location} key={location.pathname}>
             <Route
               path="/"
               element={
-                <Layout>
+                // <Layout>
                   <Home />
-                </Layout>
+                // </Layout>
               }
             />
             <Route
               path="/welcome"
               element={
                 <Layout>
-                  <Home />
+                  <Welcome />
                 </Layout>
               }
             />

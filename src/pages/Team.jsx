@@ -27,15 +27,15 @@ const Team = () => {
     {
       name: "Koushik Babu",
       designation: "Student - 4th Year",
-      image: "/team/micheal.png",
+      image: "/team/koushik.png",
       github: "https://github.com/AadithyaSJ",
       linkedIn: "https://www.linkedin.com/in/s-j-aadithya-80a551257/",
     },
     {
       name: "Sairaghav S",
       designation: "Student - 4th Year",
-      image: "/team/Aadithya.png",
-      github: "https://github.com/AadithyaSJ",
+      image: "/team/sairaghav.png",
+      github: "https://github.com/Sairaghav-007",
       linkedIn: "https://www.linkedin.com/in/s-j-aadithya-80a551257/",
     },
     // ... repeat

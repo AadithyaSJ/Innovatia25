@@ -3,7 +3,7 @@ import BountyButton from "../components/BountyButton";
 
 const EventCard = ({ name, pic, info, path }) => {
   return (
-    <div className="relative flex flex-col bg-yellow-50/95 p-4 rounded-lg border-4 border-orange-800 shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
+    <div className="relative flex flex-col bg-yellow-50/95 p-4 rounded-lg border-4 border-red-900 shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
       {/* Wrinkled/Torn Paper Effect */}
       <div
         className="absolute inset-0 pointer-events-none z-0"
@@ -30,8 +30,8 @@ const EventCard = ({ name, pic, info, path }) => {
       />
 
       {/* Top rectangle banner for WANTED */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-10 bg-red-700 flex items-center justify-center rounded-b-md shadow-md z-10">
-        <span className="font-spicy text-white text-lg uppercase tracking-wider drop-shadow-md">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-10 bg-red-900 flex items-center justify-center rounded-b-md shadow-md z-10">
+        <span className="font-Besta text-white text-2xl uppercase tracking-widest drop-shadow-md">
           WANTED
         </span>
       </div>
@@ -45,12 +45,12 @@ const EventCard = ({ name, pic, info, path }) => {
       />
 
       {/* Event Name */}
-      <h3 className="text-2xl font-gloria font-bold mt-4 text-orange-900 text-center drop-shadow-md relative z-10">
+      <h3 className="text-2xl font-rye font-bold mt-4 text-orange-900 text-center drop-shadow-md relative z-10">
         {name}
       </h3>
 
       {/* Event Info */}
-      <p className="mt-2 text-sm font-kavoon text-orange-700 text-center relative z-10">
+      <p className="mt-2 text-sm font-righteous text-orange-700 text-center relative z-10">
         {info}
       </p>
 

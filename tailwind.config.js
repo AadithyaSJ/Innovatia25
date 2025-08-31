@@ -10,6 +10,7 @@ export default {
         vt323: ["VT323", "monospace"],
         gloria: ["Gloria Hallelujah", "cursive"],
         rye: ["Rye", "cursive"],
+        Besta: ["Besta Baru", "cursive"],
       },
       colors: {
         neon: {

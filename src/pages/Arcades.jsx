@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import sheriffBadgeCode from "../assets/sheriff-badge-technical.jpeg"; // rename if needed
+import code from "/Code.jpg";
+import creative from "/Creative.jpg";
 import sheriffBadgeCreative from "../assets/sheriff-badge-nontechnical.jpeg"; // rename if needed
 import { useNavigate } from "react-router-dom";
 import Headers from "../components/Headers";
@@ -29,10 +30,10 @@ const Arcades = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-gray-700 via-gray-800 to-gray-700 animate-pulse rounded-lg" />
             )}
             <img
-              src={sheriffBadgeCode}
+              src={code}
               alt="Code Events Badge"
               loading="lazy"
-              className={`w-full h-auto object-contain mx-auto transition-all duration-500 ${
+              className={`w-full h-auto object-contain mx-auto rounded-4xl transition-all duration-500 ${
                 loaded.code ? "opacity-100 scale-100" : "opacity-0 scale-95"
               } hover:scale-105`}
               onLoad={() => setLoaded((prev) => ({ ...prev, code: true }))}
@@ -53,10 +54,10 @@ const Arcades = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-gray-700 via-gray-800 to-gray-700 animate-pulse rounded-lg" />
             )}
             <img
-              src={sheriffBadgeCreative}
+              src={creative}
               alt="Creative Events Badge"
               loading="lazy"
-              className={`w-full h-auto object-contain mx-auto transition-all duration-500 ${
+              className={`w-full h-auto object-contain mx-auto rounded-4xl transition-all duration-500 ${
                 loaded.creative
                   ? "opacity-100 scale-100"
                   : "opacity-0 scale-95"
