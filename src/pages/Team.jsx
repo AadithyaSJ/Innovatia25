@@ -6,7 +6,7 @@ const Team = () => {
   const staff = [
     { name: "Dr Nithya M", designation: "Head of the Department", image: "/team/nithya.png" },
     { name: "Ms. Shiny A", designation: "Staff Coordinator", image: "/team/shiny.png" },
-    { name: "Mr. Yuvaraj", designation: "Staff Coordinator", image: "/team/yuvaraj.png" },
+    { name: "Mr. Yuvaraj G", designation: "Staff Coordinator", image: "/team/yuvaraj.png" },
   ];
 
   const webdevs = [
