@@ -7,15 +7,8 @@ export default function PowerUpLoader({ currentLoadValue = 0, onComplete }) {
   const [displayProgress, setDisplayProgress] = useState(0);
   const requestRef = useRef();
 
-  // Animate displayProgress smoothly up to currentLoadValue
   const animateProgress = () => {
-    setDisplayProgress((prev) => {
-      if (prev < currentLoadValue) {
-        const nextValue = Math.min(currentLoadValue, prev + 1);
-        return nextValue;
-      }
-      return prev;
-    });
+    setDisplayProgress((prev) => Math.min(currentLoadValue, prev + 1));
     requestRef.current = requestAnimationFrame(animateProgress);
   };
 
@@ -29,11 +22,9 @@ export default function PowerUpLoader({ currentLoadValue = 0, onComplete }) {
         return () => clearTimeout(timeout);
       }
     }
-    // Cleanup on unmount or dependency change
     return () => cancelAnimationFrame(requestRef.current);
   }, [currentLoadValue, displayProgress, onComplete]);
 
-  // Neon flickering animation for lightning bolt
   const boltVariants = {
     flicker: {
       opacity: [0.3, 1, 0.3],
@@ -42,6 +33,13 @@ export default function PowerUpLoader({ currentLoadValue = 0, onComplete }) {
       transition: { duration: 0.8, repeat: Infinity, repeatType: "loop" },
     },
   };
+
+  // Responsive sizing
+  const barWidth = window.innerWidth < 640 ? 40 : window.innerWidth < 1024 ? 60 : 80;
+  const barHeight = window.innerWidth < 640 ? 200 : window.innerWidth < 1024 ? 280 : 300;
+  const fontSizeTitle = window.innerWidth < 640 ? 16 : window.innerWidth < 1024 ? 20 : 24;
+  const fontSizePercent = window.innerWidth < 640 ? 14 : window.innerWidth < 1024 ? 18 : 20;
+  const boltSize = window.innerWidth < 640 ? 20 : window.innerWidth < 1024 ? 25 : 30;
 
   return (
     <div
@@ -58,6 +56,8 @@ export default function PowerUpLoader({ currentLoadValue = 0, onComplete }) {
         overflow: "hidden",
         flexDirection: "column",
         userSelect: "none",
+        padding: 16,
+        boxSizing: "border-box",
       }}
     >
       {/* Scanlines */}
@@ -84,8 +84,9 @@ export default function PowerUpLoader({ currentLoadValue = 0, onComplete }) {
       {/* Loading title */}
       <div
         style={{
-          marginBottom: 24,
-          fontSize: 24,
+          marginBottom: 16,
+          fontSize: fontSizeTitle,
+          textAlign: "center",
           textShadow: "0 0 8px #0ff, 0 0 12px #f0f",
         }}
       >
@@ -95,8 +96,8 @@ export default function PowerUpLoader({ currentLoadValue = 0, onComplete }) {
       {/* Neon Power Bar Container */}
       <div
         style={{
-          width: 60,
-          height: 300,
+          width: barWidth,
+          height: barHeight,
           border: "4px solid #0ff",
           borderRadius: 12,
           boxShadow: "0 0 40px #0ff",
@@ -129,8 +130,8 @@ export default function PowerUpLoader({ currentLoadValue = 0, onComplete }) {
             position: "absolute",
             left: "50%",
             top: `${100 - displayProgress}%`,
-            width: 30,
-            height: 30,
+            width: boltSize,
+            height: boltSize,
             background: `
               radial-gradient(circle, rgba(255,255,255,0.85) 10%, transparent 60%),
               radial-gradient(circle, #f0f 30%, transparent 80%)
@@ -147,8 +148,8 @@ export default function PowerUpLoader({ currentLoadValue = 0, onComplete }) {
       {/* Loading percent indicator */}
       <div
         style={{
-          marginTop: 24,
-          fontSize: 20,
+          marginTop: 16,
+          fontSize: fontSizePercent,
           color: "#0ff",
           textShadow: "0 0 6px #0ff",
           userSelect: "none",
