@@ -13,24 +13,36 @@ export default function Welcome() {
       <div className="pointer-events-none absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[25rem] md:w-[40rem] h-[25rem] md:h-[40rem] rounded-full blur-[200px]" />
 
       {/* Hero Section */}
-      <section className="px-4 sm:px-6 md:px-10 pt-20 md:pt-24 pb-12 md:pb-16 max-w-6xl mx-auto relative z-10 text-center">
-  {/* Title Image */}
-  <div className="flex justify-center">
-    <img
-      src="/Innovatia2.png"
-      alt="Innovatia 4.0"
-      className="w-full sm:w-2/3 md:w-1/2 lg:w-1/2 h-auto object-contain"
-    />
-  </div>
+      <section className="px-4 sm:px-6 md:px-10 pt-20 md:pt-24 pb-12 md:pb-16 max-w-6xl mx-auto relative z-10 text-center font-righteous">
+        {/* College & Department */}
+        <div className="mb-8 space-y-2">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white">
+            Sri Sairam Engineering College
+          </h2>
+          <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-gray-300">
+            Department of M.Tech Computer Science & Engineering
+          </h3>
+          <p className="text-sm sm:text-base md:text-lg text-gray-300 mt-1">presents</p>
+        </div>
 
-  {/* Buttons */}
-  <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center font-gloria">
-    <NeonButton to="/events" glowColor="cyan">ARCADE</NeonButton>
-    <NeonButton to="/team" glowColor="cyan">LEGENDS</NeonButton>
-    <NeonButton to="/about" glowColor="orange">The Story</NeonButton>
-    <NeonButton to="/showcase" glowColor="orange">Enter Timeline</NeonButton>
-  </div>
-</section>
+        {/* Innovatia Logo */}
+        <div className="flex justify-center mb-8">
+          <img
+            src="/Innovatia2.png"
+            alt="Innovatia 4.0"
+            className="w-4/5 sm:w-2/3 md:w-1/2 lg:w-1/2 h-auto object-contain"
+          />
+        </div>
+
+        {/* Buttons */}
+        <div className="mt-6 flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center font-gloria">
+          <NeonButton to="/events" glowColor="cyan">ARCADE</NeonButton>
+          <NeonButton to="/team" glowColor="cyan">LEGENDS</NeonButton>
+          <NeonButton to="/about" glowColor="orange">The Story</NeonButton>
+          <NeonButton to="/showcase" glowColor="orange">Enter Timeline</NeonButton>
+        </div>
+      </section>
+
 
       {/* Countdown */}
       <div className="relative z-10 px-4 sm:px-6 md:px-0 flex justify-center">
@@ -52,9 +64,9 @@ export default function Welcome() {
         ></video>
       </div>
       {/* SDG Section */}
-      <div className="mt-12 px-4 w-full">
+      {/* <div className="mt-12 px-4 w-full">
         <SDG />
-      </div>
+      </div> */}
     </main>
   );
 }

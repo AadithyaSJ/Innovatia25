@@ -12,6 +12,7 @@ import About from "./pages/About";
 import Team from "./pages/Team";
 import EventsPage from "./pages/EventsPage";
 import Welcome from "./pages/Welcome";
+import EventBrochure from "./pages/EventBrochure";
 
 export default function App() {
   const [loaded, setLoaded] = useState(false);
@@ -114,6 +115,14 @@ export default function App() {
               element={
                 <Layout>
                   <Team />
+                </Layout>
+              }
+            />
+            <Route
+              path="/brochure/:eventName"
+              element={
+                <Layout>
+                  <EventBrochure />
                 </Layout>
               }
             />

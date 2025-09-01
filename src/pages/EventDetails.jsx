@@ -2,11 +2,13 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import Header from "../components/Headers";
 import eventData from "../data/data.json";
+import { useNavigate } from "react-router-dom";
 
 const EventDetails = () => {
   const { eventName } = useParams();
   const allEvents = [...eventData.code, ...eventData.creative];
   const event = allEvents.find((e) => e.key === eventName);
+  const navigate = useNavigate();
 
   const backLink = event
     ? event.category === "creative"
@@ -34,13 +36,18 @@ const EventDetails = () => {
       <div className="bg-yellow-50/95 p-6 rounded-lg border-4 border-orange-800 shadow-lg">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Image on mobile top / desktop right */}
-          <div className="lg:order-2 flex justify-center items-start">
-            <img
-              src={event.image}
-              alt={event.name}
-              className="rounded-md w-full h-64 lg:h-80 object-cover border-2 border-orange-700 shadow-md"
-            />
-          </div>
+          <div className="lg:order-2 flex justify-center items-start w-full">
+  <img
+    src={event.image}
+    alt={event.name}
+    className="rounded-md w-full max-w-full aspect-[16/9] object-cover border-2 border-orange-700 shadow-md"
+    onError={(e) => {
+      e.target.src = "/placeholder-image.png";
+      console.log("Event image load failed");
+    }}
+  />
+</div>
+
 
           {/* Details */}
           <div className="lg:order-1 lg:col-span-2">
@@ -125,7 +132,7 @@ const EventDetails = () => {
                 Register Now
               </a>
             )}
-            {event.groupLink && (
+            {/* {event.groupLink && (
               <a
                 href={event.groupLink}
                 target="_blank"
@@ -134,16 +141,16 @@ const EventDetails = () => {
               >
                 Group Link
               </a>
-            )}
+            )} */}
             {event.brochureLink && (
-              <a
-                href={event.brochureLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-orange-700 text-white font-kavoon px-4 py-2 rounded-md hover:bg-orange-600 transition-colors text-center w-full md:w-auto"
-              >
-                Event Brochure
-              </a>
+              <button
+    onClick={() => 
+      navigate(`/brochure/${event.key}`, { state: { event } })
+    }
+    className="bg-orange-700 text-white font-kavoon px-4 py-2 rounded-md hover:bg-orange-600 transition-colors text-center w-full md:w-auto"
+  >
+    Event Brochure
+  </button>
             )}
           </div>
 

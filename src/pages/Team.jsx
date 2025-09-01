@@ -18,6 +18,13 @@ const Team = () => {
       linkedIn: "https://www.linkedin.com/in/s-j-aadithya-80a551257/",
     },
     {
+      name: "Sairaghav S",
+      designation: "Student - 4th Year",
+      image: "/team/sairaghav.png",
+      github: "https://github.com/Sairaghav-007",
+      linkedIn: "https://www.linkedin.com/in/s-j-aadithya-80a551257/",
+    },
+    {
       name: "Micheal Rohin",
       designation: "Student - 3rd Year",
       image: "/team/micheal.png",
@@ -29,13 +36,6 @@ const Team = () => {
       designation: "Student - 4th Year",
       image: "/team/koushik.png",
       github: "https://github.com/AadithyaSJ",
-      linkedIn: "https://www.linkedin.com/in/s-j-aadithya-80a551257/",
-    },
-    {
-      name: "Sairaghav S",
-      designation: "Student - 4th Year",
-      image: "/team/sairaghav.png",
-      github: "https://github.com/Sairaghav-007",
       linkedIn: "https://www.linkedin.com/in/s-j-aadithya-80a551257/",
     },
     // ... repeat

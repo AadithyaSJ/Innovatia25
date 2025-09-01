@@ -37,12 +37,18 @@ const EventCard = ({ name, pic, info, path }) => {
       </div>
 
       {/* Event Image */}
-      <img
-        src={pic}
-        alt={name}
-        className="rounded-md w-full h-52 object-cover border-2 border-orange-700 mt-10 relative z-10 filter contrast-110 brightness-95"
-        onError={(e) => { e.target.src = "/placeholder-image.png"; console.log("Event image load failed"); }}
-      />
+      <div className="w-full max-w-full sm:max-w-md mx-auto mt-10 relative z-10">
+        <img
+          src={pic}
+          alt={name}
+          className="rounded-md w-full aspect-[16/9] object-cover border-2 border-orange-700 filter contrast-110 brightness-95"
+          onError={(e) => {
+            e.target.src = "/placeholder-image.png";
+            console.log("Event image load failed");
+          }}
+        />
+      </div>
+
 
       {/* Event Name */}
       <h3 className="text-2xl font-rye font-bold mt-4 text-orange-900 text-center drop-shadow-md relative z-10">

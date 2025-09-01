@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full min-h-screen object-cover object-top opacity-30"
+          className="absolute inset-0 w-full min-h-screen object-cover object-top opacity-38"
         />
 
         <m.div

@@ -8,7 +8,7 @@
       "team": "2-3 members",
       "venue": "Smart Classroom I, Sri Sairam Engineering College",
       "reportingTime": "9:00 AM",
-      "image": "/events/cybernoir-poster.png",
+      "image": "/events/CYBERNOIR-POSTER.png",
       "rounds": [
         {
           "name": "Round 1",
@@ -69,7 +69,7 @@
       "instructions": "Team size 3 members. Bring laptop & ethernet cable. Only one registration per team. Fair play mandatory; cheating leads to disqualification.",
       "formLink": "https://forms.gle/Do7qNvHViRq6kJbb7",
       "groupLink": "#",
-      "brochureLink": "#",
+      "brochureLink": "/events/retro-code-chronicles-brochure.png",
       "coordinators": [
         { "name": "SANJAY V", "phone": "+91 73585 91248", "type": "Student" },
         { "name": "YUVASHREE R H", "phone": "+91 9345031173", "type": "Student" }
@@ -110,7 +110,7 @@
       "instructions": "Team size 2-3 members. Bring laptops and ethernet cables. Only one registration per team. Fair play mandatory. Follow time limits for submissions.",
       "formLink": "https://forms.gle/B3SLWkfFj15naLGS7",
       "groupLink": "#",
-      "brochureLink": "#",
+      "brochureLink": "/events/vintage-webverse-brochure.png",
       "coordinators": [
         { "name": "KOUSHIK BABU M", "phone": "+91 7339473708", "type": "Student" },
         { "name": "SHAKTHI AKASHATA", "phone": "+91 9962091510", "type": "Student" }
@@ -126,7 +126,7 @@
       "team": "Individual or Team",
       "venue": "IEDC Cell, Sri Sai Ram Engineering College",
       "reportingTime": "9:00 AM",
-      "image": "/events/paper-powerhouse-poster.png",
+      "image": "/events/PAPER-POWERHOUSE-POSTER.png",
       "rounds": [
         {
           "name": "Abstract & Concept Map Screening",
@@ -146,7 +146,7 @@
       "instructions": "Abstracts must strictly adhere to page/word limits; plagiarism will lead to disqualification. All visual and cross-domain challenges in finals must be spontaneous. Strict time limits apply for each stage; exceeding limits leads to point deductions. Submissions after the deadline will not be accepted. Judges' decisions are final and binding.",
       "formLink": "https://docs.google.com/forms/d/e/1FAIpQLSeECunskVoNAzq177diylGk2xSy1cecAv618PZlg30RfOHFog/viewform",
       "groupLink": "#",
-      "brochureLink": "#",
+      "brochureLink": "/PAPER-POWERHOUSE-BROCHURE.png",
       "coordinators": [
         { "name": "Mridhula.S", "phone": "7010964253", "type": "Student" },
         { "name": "Lokesh CM", "phone": "8608537669", "type": "Student" }
@@ -180,7 +180,7 @@
       "instructions": "Team size 2-3 members. College ID mandatory. Original ideas only. Late submissions not accepted. Judging based on creativity, innovation, adaptability, and presentation skills.",
       "formLink": "https://docs.google.com/forms/d/e/1FAIpQLSd9dw2GEq7xuBJRNJUXgg3ZUK8DpQVrjiU-3H55AWmNKcnX9w/viewform",
       "groupLink": "#",
-      "brochureLink": "#",
+      "brochureLink": "/events/past-to-profit-brochure.png",
       "coordinators": [
         { "name": "Sivasakthi A", "phone": "8122146182", "type": "Student" },
         { "name": "Ashwin V", "phone": "7904341682", "type": "Student" }
@@ -220,7 +220,7 @@
       ],
       "instructions": "Team size 2-4 members. Follow time constraints. Use only provided materials for design. Judging final and binding.",
       "formLink": "https://forms.gle/5EiXcqmNS3UqUjm39",
-      "groupLink": "#",
+      "groupLink": "/events/The-Golden-Blueprint-Brochure.jpg",
       "brochureLink": "#",
       "coordinators": [
         { "name": "Parthiban J", "phone": "+918667628285", "type": "Student" },
