@@ -25,7 +25,7 @@ const Team = () => {
       linkedIn: "https://www.linkedin.com/in/s-j-aadithya-80a551257/",
     },
     {
-      name: "Micheal Rohin",
+      name: "Michael Rohin",
       designation: "Student - 3rd Year",
       image: "/team/micheal.png",
       github: "https://github.com/MICHAELROHIN",
