@@ -31,7 +31,8 @@
       "brochureLink": "#",
       "coordinators": [
         { "name": "S.R.Viknesh", "phone": "6379200416", "type": "Student" },
-        { "name": "S.Saranya", "phone": "7603868669", "type": "Student" }
+        { "name": "S.Saranya", "phone": "7603868669", "type": "Student" },
+        { "name": "JANCY RANI K", "phone": "+91 8056385337", "type": "Staff" }
       ]
     },
     {
@@ -72,7 +73,8 @@
       "brochureLink": "/events/retro-code-chronicles-brochure.png",
       "coordinators": [
         { "name": "SANJAY V", "phone": "+91 73585 91248", "type": "Student" },
-        { "name": "YUVASHREE R H", "phone": "+91 9345031173", "type": "Student" }
+        { "name": "YUVASHREE R H", "phone": "+91 9345031173", "type": "Student" },
+        { "name": "SARANYA V", "phone": "+91 9629019412", "type": "Staff" }
       ]
     },
     {
@@ -113,8 +115,10 @@
       "brochureLink": "/events/vintage-webverse-brochure.png",
       "coordinators": [
         { "name": "KOUSHIK BABU M", "phone": "+91 7339473708", "type": "Student" },
-        { "name": "SHAKTHI AKASHATA", "phone": "+91 9962091510", "type": "Student" }
+        { "name": "SHAKTHI AKASHATA", "phone": "+91 9962091510", "type": "Student" },
+        { "name": "AHSAN SHARIFF M", "phone": "+91 9840948078", "type": "Staff" }
       ]
+      
     }
   ],
   "creative": [
@@ -149,7 +153,8 @@
       "brochureLink": "/PAPER-POWERHOUSE-BROCHURE.png",
       "coordinators": [
         { "name": "Mridhula.S", "phone": "7010964253", "type": "Student" },
-        { "name": "Lokesh CM", "phone": "8608537669", "type": "Student" }
+        { "name": "Lokesh CM", "phone": "8608537669", "type": "Student" },
+        { "name": "KAYALVIZHI S", "phone": "+91 9600668255", "type": "Staff" }
       ]
     },
     {
@@ -183,7 +188,8 @@
       "brochureLink": "/events/past-to-profit-brochure.png",
       "coordinators": [
         { "name": "Sivasakthi A", "phone": "8122146182", "type": "Student" },
-        { "name": "Ashwin V", "phone": "7904341682", "type": "Student" }
+        { "name": "Ashwin V", "phone": "7904341682", "type": "Student" },
+        { "name": "LALITHA A", "phone": "+91 7799874563", "type": "Staff" }
       ]
     },
     {
@@ -223,8 +229,9 @@
       "groupLink": "/events/The-Golden-Blueprint-Brochure.jpg",
       "brochureLink": "#",
       "coordinators": [
-        { "name": "Parthiban J", "phone": "+918667628285", "type": "Student" },
-        { "name": "Devadarshan R", "phone": "+917338772604", "type": "Student" }
+        { "name": "Parthiban J", "phone": "8667628285", "type": "Student" },
+        { "name": "Devadarshan R", "phone": "7338772604", "type": "Student" },
+        { "name": "KALPANA D", "phone": "+91 9585618987", "type": "Staff" }
       ]
     }
   ]

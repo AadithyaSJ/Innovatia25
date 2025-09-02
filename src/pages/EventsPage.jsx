@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { EventCard } from "./Events";
-import backButton from "/public/back-button.png";
 import eventData from "../data/data.json";
 import Header from "../components/Headers";
 

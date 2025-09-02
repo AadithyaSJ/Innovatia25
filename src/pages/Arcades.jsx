@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import code from "/Code.jpg";
 import creative from "/Creative.jpg";
-import sheriffBadgeCreative from "../assets/sheriff-badge-nontechnical.jpeg"; // rename if needed
 import { useNavigate } from "react-router-dom";
 import Headers from "../components/Headers";
 

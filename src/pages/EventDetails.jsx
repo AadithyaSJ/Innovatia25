@@ -176,7 +176,7 @@ const EventDetails = () => {
             </div>
             <div>
               <h3 className="text-xl font-kavoon text-orange-900 mb-2">
-                Staff Coordinators
+                Staff Coordinator
               </h3>
               {event.coordinators
                 .filter((person) => person.type === "Staff")
