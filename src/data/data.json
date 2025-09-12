@@ -20,7 +20,7 @@
         {
           "name": "Round 2",
           "mode": "Offline",
-          "date": "October 9, 2025",
+          "date": "October 13, 2025",
           "time": "9:00 AM - 4:00 PM",
           "info": "Detective-style mission solving interconnected challenges to reveal the true culprit 'The Shadow'."
         }
@@ -31,7 +31,8 @@
       "brochureLink": "#",
       "coordinators": [
         { "name": "S.R.Viknesh", "phone": "6379200416", "type": "Student" },
-        { "name": "S.Saranya", "phone": "7603868669", "type": "Student" }
+        { "name": "S.Saranya", "phone": "7603868669", "type": "Student" },
+        { "name": "Ms. K. Jancy Rani", "phone": "+91 8056385337", "type": "Staff" }
       ]
     },
     {
@@ -54,14 +55,14 @@
         {
           "name": "Offline Semi-Finals – Logo Unlocked",
           "mode": "Offline",
-          "date": "9th October 2025",
+          "date": "13th October 2025",
           "time": "45-60 minutes",
           "info": "Teams solve coding problems to reveal sections of a hidden logo and tackle bonus riddles. Only one coder active at a time; teamwork encouraged. Judges' decision final."
         },
         {
           "name": "Offline Finale – Code Rush",
           "mode": "Offline",
-          "date": "9th October 2025",
+          "date": "13th October 2025",
           "time": "35-40 minutes",
           "info": "Relay coding round with sequential coding turns and random funny hindrances every 15 seconds. Tests creativity, coding skills, teamwork, and composure."
         }
@@ -72,7 +73,8 @@
       "brochureLink": "/events/retro-code-chronicles-brochure.png",
       "coordinators": [
         { "name": "SANJAY V", "phone": "+91 73585 91248", "type": "Student" },
-        { "name": "YUVASHREE R H", "phone": "+91 9345031173", "type": "Student" }
+        { "name": "YUVASHREE R H", "phone": "+91 9345031173", "type": "Student" },
+        { "name": "Ms. V. Saranya", "phone": "+91 9629019412", "type": "Staff" }
       ]
     },
     {
@@ -95,14 +97,14 @@
         {
           "name": " Prompt-O-Graph",
           "mode": "Offline",
-          "date": "9th October 2025",
+          "date": "13th October 2025",
           "time": "45-60 minutes",
           "info": "One teammate views a vintage template and describes it to others. Team recreates the design within time limits. Tests teamwork and design precision."
         },
         {
           "name": "Classic Remake",
           "mode": "Offline",
-          "date": "9th October 2025",
+          "date": "13th October 2025",
           "time": "45-60 minutes",
           "info": "Teams analyze a website shown briefly, create a detailed prompt, and design it using multiple stacks. Final build deployed live to Netlify. Prompts must be clear and technically accurate."
         }
@@ -113,7 +115,8 @@
       "brochureLink": "/events/vintage-webverse-brochure.png",
       "coordinators": [
         { "name": "KOUSHIK BABU M", "phone": "+91 7339473708", "type": "Student" },
-        { "name": "SHAKTHI AKASHATA", "phone": "+91 9962091510", "type": "Student" }
+        { "name": "SHAKTHI AKASHATA", "phone": "+91 9962091510", "type": "Student" },
+        { "name": "Mr. M. Ahsan Shariff", "phone": "+91 9840948078", "type": "Staff" }
       ]
     }
   ],
@@ -131,14 +134,14 @@
         {
           "name": "Abstract & Concept Map Screening",
           "mode": "Online",
-          "date": "9th October 2025",
+          "date": "13th October 2025",
           "time": "9:00 AM - 12:00 PM",
           "info": "Teams submit a five-page ppt highlighting problem, novelty, and outcomes, along with a concept map."
         },
         {
           "name": "Academic Clash of Ideas",
           "mode": "Offline",
-          "date": "9th October 2025",
+          "date": "13th October 2025",
           "time": "1:00 PM - 4:00 PM",
           "info": "Stage 1: Shortlisted teams present their paper on stage (5-7 minutes). Stage 2: Interpret random visuals on spot. Stage 3: Make cross-domain connections and answer interactive questions from judges and audience."
         }
@@ -149,7 +152,8 @@
       "brochureLink": "/PAPER-POWERHOUSE-BROCHURE.png",
       "coordinators": [
         { "name": "Mridhula.S", "phone": "7010964253", "type": "Student" },
-        { "name": "Lokesh CM", "phone": "8608537669", "type": "Student" }
+        { "name": "Lokesh CM", "phone": "8608537669", "type": "Student" },
+        { "name": "Ms. S. Kayalvizhi", "phone": "9600668255", "type": "Staff" }
       ]
     },
     {
@@ -172,7 +176,7 @@
         {
           "name": "The Spotlight Showdown",
           "mode": "Offline",
-          "date": "9th October 2025",
+          "date": "13th October 2025",
           "time": "9:00 AM - 4:00 PM",
           "info": "Teams analyze failed startups, prep for 7 minutes, then deliver a 7-minute pitch. Must incorporate a mandatory 'Plot Twist' card and optionally solve a puzzle to discard it."
         }
@@ -183,7 +187,8 @@
       "brochureLink": "/events/past-to-profit-brochure.png",
       "coordinators": [
         { "name": "Sivasakthi A", "phone": "8122146182", "type": "Student" },
-        { "name": "Ashwin V", "phone": "7904341682", "type": "Student" }
+        { "name": "Ashwin V", "phone": "7904341682", "type": "Student" },
+        { "name": "Ms. A. Lalitha", "phone": "7799874563", "type": "Staff" }
       ]
     },
     {
@@ -194,7 +199,7 @@
       "team": "2-4 members",
       "venue": "Beta Hall, Sri Sairam Engineering College",
       "reportingTime": "9:00 AM",
-      "image": "/events/golden-blueprint-poster.png",
+      "image": "/events/The-Golden-Blueprint-Poster.jpg",
       "rounds": [
         {
           "name": "Poster Campaign",
@@ -206,14 +211,14 @@
         {
           "name": "User Interface Creation",
           "mode": "Offline",
-          "date": "9th October 2025",
+          "date": "13th October 2025",
           "time": "60 minutes",
           "info": "Teams design a UI incorporating a given mystery theme and problem statement. Completion of all pages required. Judges' decision final."
         },
         {
           "name": "Reverse Designing Showdown",
           "mode": "Offline",
-          "date": "9th October 2025",
+          "date": "13th October 2025",
           "time": "30 minutes",
           "info": "Teams decode abstract UI fragments into complete design solutions, present a 5-minute pitch, and defend in 3-minute Q&A. Judging based on originality, clarity, prototype quality, and communication."
         }
@@ -224,7 +229,8 @@
       "brochureLink": "#",
       "coordinators": [
         { "name": "Parthiban J", "phone": "+918667628285", "type": "Student" },
-        { "name": "Devadarshan R", "phone": "+917338772604", "type": "Student" }
+        { "name": "Devadarshan R", "phone": "+917338772604", "type": "Student" },
+        { "name": "Ms. D. Kalpana", "phone": "+919585618987", "type": "Staff" }
       ]
     }
   ]

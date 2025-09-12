@@ -7,8 +7,8 @@ import Header from "../components/Headers";
 const events = [
   { key: "paper-powerhouse", name: "Paper Powerhouse", brochure: "/events/PAPER-POWERHOUSE-BROCHURE.png" },
   { key: "past-to-profit", name: "Past TO Profit", brochure: "/events/past-to-profit-brochure.png" },
-  { key: "golden-blueprint", name: "The Golden Blueprint", brochure: "/events/The-Golden-Blueprint-Brochure.jpg" },
-  { key: "cybernoir", name: "CYBERNOIR", brochure: "/events/PAPER-POWERHOUSE-BROCHURE.png" },
+  { key: "golden-blueprint", name: "The Golden Blueprint", brochure: "/events/golden-blueprint-brochure.png" },
+  { key: "cybernoir", name: "CYBERNOIR", brochure: "/events/CYBERNOIR-BROCHURE.png" },
   { key: "retro-code-chronicles", name: "Retro Code Chronicles", brochure: "/events/retro-code-chronicles-brochure.png" },
   { key: "vintage-webverse", name: "Vintage Webverse", brochure: "/events/vintage-webverse-brochure.png" },
   { key: "Other", name: "Other Event", brochure: "/brochure-other-event.png" },

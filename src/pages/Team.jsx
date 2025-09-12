@@ -15,28 +15,28 @@ const Team = () => {
       designation: "Student - 4th Year",
       image: "/team/Aadithya.png",
       github: "https://github.com/AadithyaSJ",
-      linkedIn: "https://www.linkedin.com/in/s-j-aadithya-80a551257/",
+      linkedIn: "https://www.linkedin.com/in/aadithyasj/",
     },
     {
       name: "Sairaghav S",
       designation: "Student - 4th Year",
       image: "/team/sairaghav.png",
       github: "https://github.com/Sairaghav-007",
-      linkedIn: "https://www.linkedin.com/in/s-j-aadithya-80a551257/",
+      linkedIn: "https://www.linkedin.com/in/sai-raghav-65a660262/",
     },
     {
       name: "Micheal Rohin",
       designation: "Student - 3rd Year",
       image: "/team/micheal.png",
       github: "https://github.com/MICHAELROHIN",
-      linkedIn: "https://www.linkedin.com/in/s-j-aadithya-80a551257/",
+      linkedIn: "https://www.linkedin.com/in/michael-rohin/",
     },
     {
       name: "Koushik Babu",
       designation: "Student - 4th Year",
       image: "/team/koushik.png",
       github: "https://github.com/AadithyaSJ",
-      linkedIn: "https://www.linkedin.com/in/s-j-aadithya-80a551257/",
+      linkedIn: "https://www.linkedin.com/in/koushik-babu/",
     },
     // ... repeat
   ];

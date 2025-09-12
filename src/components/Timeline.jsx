@@ -67,7 +67,7 @@ export function EventTimeline() {
       <RetroTimeline
         title="Offline Schedule"
         agenda={offlineAgenda}
-        extra="October 09, 2025"
+        extra="October 13, 2025"
       />
     </section>
   );

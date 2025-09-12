@@ -3,7 +3,7 @@ import NixieCountdown from "../components/NixieCountdown.jsx";
 import SDG from "../components/SDG.jsx";
 
 export default function Welcome() {
-  const target = new Date("2025-10-09T00:00:00");
+  const target = new Date("2025-10-13T00:00:00");
 
   return (
     <main className="min-h-dvh w-full relative overflow-hidden">
