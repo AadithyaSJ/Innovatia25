@@ -22,7 +22,7 @@ export default function Footer() {
       <RetroDivider />
 
       {/* Year */}
-      <h3 className="text-base sm:text-lg md:text-xl neon-text">© 2024-2025</h3>
+      <h3 className="text-base sm:text-lg md:text-xl neon-text">© 2025-2026</h3>
 
       <RetroDivider />
 
