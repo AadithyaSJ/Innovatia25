@@ -6,7 +6,7 @@ import Header from "../components/Headers";
 // all event keys must match the URL first word
 const events = [
   { key: "paper-powerhouse", name: "Paper Powerhouse", brochure: "/events/PAPER-POWERHOUSE-BROCHURE.png" },
-  { key: "past-to-profit", name: "Past TO Profit", brochure: "/events/past-to-profit-brochure.png" },
+  { key: "past-to-profit", name: "Past TO Profit", brochure: "/events/past-to-profit-brochure.jpg" },
   { key: "golden-blueprint", name: "The Golden Blueprint", brochure: "/events/The-Golden-Blueprint-Brochure.jpg" },
   { key: "cybernoir", name: "CYBERNOIR", brochure: "/events/CYBERNOIR-BROCHURE.png" },
   { key: "retro-code-chronicles", name: "Retro Code Chronicles", brochure: "/events/retro-code-chronicles-brochure.jpg" },
