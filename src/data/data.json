@@ -99,14 +99,14 @@
           "mode": "Offline",
           "date": "13th October 2025",
           "time": "45-60 minutes",
-          "info": "One teammate views a vintage template and describes it to others. Team recreates the design within time limits. Tests teamwork and design precision."
+          "info": "One teammate views the given template/design and have to describe it to the other team members. The team recreates the design within a time limit. This round tests teamwork and design precision."
         },
         {
           "name": "Classic Remake",
           "mode": "Offline",
           "date": "13th October 2025",
           "time": "45-60 minutes",
-          "info": "Teams analyze a website shown briefly, create a detailed prompt, and design it using multiple stacks. Final build deployed live to Netlify. Prompts must be clear and technically accurate."
+          "info": "Teams analyse a website shown briefly for a short duration. Then have to create a detailed prompt, and develop it using multiple stack. Final build has to be deployed to netlify for evaluation. This round tests prompt accuracy and quick thinking."
         }
       ],
       "instructions": "Team size 2-3 members. Bring laptops and ethernet cables. Only one registration per team. Fair play mandatory. Follow time limits for submissions.",
@@ -128,15 +128,15 @@
       "category": "creative",
       "description": "An engaging technical paper presentation competition designed to test research clarity, originality, adaptability, and presentation skills.",
       "team": "Individual or Team",
-      "venue": "IEDC Cell, Sri Sai Ram Engineering College",
+      "venue": "Room no. E3103",
       "reportingTime": "9:00 AM",
       "image": "/events/PAPER-POWERHOUSE-POSTER.png",
       "rounds": [
         {
           "name": "Abstract & Concept Map Screening",
           "mode": "Online",
-          "date": "13th October 2025",
-          "time": "9:00 AM - 12:00 PM",
+          "date": "TBD",
+          "time": "TBD",
           "info": "Teams submit a five-page ppt highlighting problem, novelty, and outcomes, along with a concept map."
         },
         {
@@ -170,7 +170,7 @@
         {
           "name": "The Ad Sprint",
           "mode": "Online",
-          "date": "28th September 2025",
+          "date": "TBD",
           "time": "TBD",
           "info": "Teams conceptualize and design a compelling poster or advertisement for fictional products in a 30-minute live Zoom session."
         },
