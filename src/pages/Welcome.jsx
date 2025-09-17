@@ -59,7 +59,7 @@ export default function Welcome() {
         </h1>
         <video
           className="w-full max-w-md sm:max-w-xl md:max-w-2xl mx-auto rounded-md focus:outline-none"
-          src="/promo.mp4"
+          src="/INNOVATIA-final.mp4"
           controls
         ></video>
       </div>
