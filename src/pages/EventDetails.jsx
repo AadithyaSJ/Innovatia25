@@ -79,6 +79,12 @@ const EventDetails = () => {
                 <p className="text-sm font-righteous text-orange-700 mb-6">
                   {event.instructions}
                 </p>
+                <h2 className="text-2xl font-rye font-bold text-orange-900 mb-2">
+                  Eligibility
+                </h2>
+                <p className="text-sm font-righteous text-orange-700 mb-6">
+                  This event is open exclusively to students from institutions other than Sairam Institutions. We truly appreciate the enthusiasm from Sairam students, but this Symposium is designed to encourage wider participation from different colleges.
+                </p>
               </>
             )}
           </div>
